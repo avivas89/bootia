@@ -1,0 +1,40 @@
+header{
+  background-color: white;
+  .navbar-expand-lg {
+    .img-header{
+      width: 50%;
+    }
+    .redes {
+      width: 20%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      a{
+        width: 25%;
+        padding-right: 20px;
+      }
+    }
+    .navbar-collapse {
+      justify-content: end;
+      .nav-item{
+        font-size: 0.8rem;
+        a.nav-link {
+          padding-left: 1rem !important;
+          padding-right: 1rem !important;
+        }
+      }
+    }
+  }
+}
+/*----------------------------Queries-------------------------------*/
+
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {}

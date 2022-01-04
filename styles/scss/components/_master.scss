@@ -1,0 +1,220 @@
+:root{
+  font-size: 16px;
+}
+
+p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
+  font-family: Exo;
+  color: $black;
+}
+
+a,p,div,input,button,textarea{
+  font-family: Roboto;
+  color: $text-secondary;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  position: relative;
+  padding: 8vh 0;
+}
+
+.btn.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  border-radius: 0;
+  padding: 8px 65px;
+  color: $white;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
+  background-color: $btn-hover!important;
+  border-color: $btn-hover!important;
+  box-shadow: none!important;
+}
+/*----------------------------Banner-------------------------------*/
+#banner{
+  background-image: url(../../assets/images/banner-header.jpg);
+  background-size:cover;
+  img {
+    width: 30%;
+    margin-bottom: 40px;
+  }
+  .text{
+    margin-bottom: 80px;
+    .display-4, .display-5{
+      font-weight: bold;
+      line-height: 1;
+      margin-bottom: 0;
+    }
+    .tittleI{
+      -webkit-text-stroke: 2px black;
+      -webkit-text-fill-color: white;
+      -webkit-animation: fill 0.5s infinite alternate;
+    }
+    .tittleII{
+      color: black;
+      font-size: 3.8rem;
+    }
+  }
+}
+/*----------------------------WHAT-WE-DO-------------------------------*/
+#what-we-do{
+  padding: 14vh 0;
+  background-color: lightgrey;
+  .back{
+    background-color:white;
+    margin: 0 7%;
+    padding: 80px 0;
+  }
+  img.i-arrow {
+    width: 3%;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+  }
+  .col-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+    h1.display-5 {
+      font-weight: 800;
+    }
+    .cspan{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      -webkit-text-stroke: 2px lightgrey;
+      -webkit-text-fill-color: white;
+      -webkit-animation: fill 0.5s infinite alternate;
+      padding-left: 50px;
+      h1{
+        font-size: 20rem;
+      }
+    }
+  }
+  .text-top {
+    border-bottom: 1px solid #ff4d06;
+    padding-bottom: 30px;
+    p{
+      font-weight: bold;
+    }
+  }
+  .text-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    margin-top: 40px;
+    .text-left {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      span{
+        font-weight: 900;
+        font-size: 2rem;
+      }
+    }
+    .text-right {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      span{
+        font-weight: 900;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+/*----------------------------PORTFOLIO-------------------------------*/
+#portfolio{
+  background-color: lightgrey;
+  background-image: url(../../assets/images/PORTFOLIO.png);
+  background-repeat: no-repeat;
+      .swiper-wrapper{
+        width: 60%;
+        height: 60vh;
+        margin-right: 0;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+}
+/*----------------------------HOE THE WORK-------------------------------*/
+#how-we-work{
+  .list-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1.display-5{
+      font-weight: 800;
+      margin-bottom: 40px;
+    }
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 10% auto;
+    margin-bottom: 50px;
+
+    .limg {
+      width: 90%;
+    }
+    .rimg{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 20px;
+    }
+    span {
+      font-size: 2.5rem;
+      color: #ff4d06;
+      font-weight: 500;
+    }
+  }
+}
+/*----------------------------CONTACT-------------------------------*/
+#contact{
+  background-image: url(../../assets/images/contact.jpg);
+  h1.display-5{
+    font-weight: 800;
+  }
+}
+/*----------------------------Queries-------------------------------*/
+
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {}
