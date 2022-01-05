@@ -1,4 +1,16 @@
-
+footer{
+  background-color: black;
+  padding: 8vh 0;
+  p{
+    color:white;
+  }
+  a{
+    color: #ff4d06;
+  }
+  .fred{
+    width: 20%
+  }
+}
 /*----------------------------Queries-------------------------------*/
 
 @media (max-width: 1399.98px) {}
