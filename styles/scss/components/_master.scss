@@ -34,6 +34,11 @@ section {
   border-color: $btn-hover!important;
   box-shadow: none!important;
 }
+a:hover{
+  text-decoration: none;
+  filter: contrast(0.5);
+  color: #ff4d06;
+}
 /*----------------------------Banner-------------------------------*/
 #banner{
   background-image: url(../../assets/images/banner-header.jpg);
