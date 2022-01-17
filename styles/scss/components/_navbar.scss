@@ -1,5 +1,8 @@
 header{
   background-color: white;
+  position: fixed;
+  width: 100vw;
+  z-index: 1000;
   .navbar-expand-lg {
     .img-header{
       width: 50%;
