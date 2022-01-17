@@ -39,6 +39,17 @@ a:hover{
   filter: contrast(0.5);
   color: #ff4d06;
 }
+section a.demo  {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../../assets/images/arrow.svg);
+  right: 2%;
+  width: 50px;
+  height: 100px;
+  top: 0;
+}
+
 /*----------------------------Banner-------------------------------*/
 #banner{
   background-image: url(../../assets/images/banner-header.jpg);
@@ -75,47 +86,31 @@ a:hover{
     }
   }
 }
-/*----------------------------WHAT-WE-DO-------------------------------*/
-#what-we-do{
+/*----------------------------SECCION 02-------------------------------*/
+#section02{
   padding: 14vh 0;
   background-color: lightgrey;
+   overflow: scroll;
   .back{
     background-color:white;
     margin: 0 7%;
     padding: 80px 0;
-  }
-  button#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: -100px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 15px;
-    background: none;
-  }
-    button#button {
-    // display: none;
-    position: fixed;
-    bottom: 180px;
-    left: 46%;
-    z-index: 99;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 15px;
-    background: none;
-  }
-  img.i-arrow {
-    width: 15%;
-    // filter: invert(1);
-  }
-    img.iarrow {
-      width: 3%;
-      // filter: invert(1);
+    button#myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: -100px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 15px;
+      background: none;
     }
+    img.i-arrow {
+      width: 15%;
+    }
+  }
   .col-left {
     display: flex;
     flex-direction: row;
@@ -171,46 +166,44 @@ a:hover{
     }
   }
 }
-/*----------------------------PORTFOLIO-------------------------------*/
-#portfolio{
+/*----------------------------SECCION 03-------------------------------*/
+#section03{
   background-color: lightgrey;
   background-image: url(../../assets/images/PORTFOLIO.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-      .swiper-wrapper{
-        width: 60%;
-        height: 60vh;
-        margin-right: 0;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+  .swiper-wrapper{
+    width: 60%;
+    height: 60vh;
+    margin-right: 0;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
-/*----------------------------HOW WE WORK-------------------------------*/
-#how-we-work{
+/*----------------------------SECCION 04-------------------------------*/
+#section04{
   background-image: url(../../assets/images/we-are-ready.png);
   background-attachment: fixed;
   .list-left {
@@ -256,8 +249,8 @@ a:hover{
     }
   }
 }
-/*----------------------------CONTACT-------------------------------*/
-#contact{
+/*----------------------------SECCION 05-------------------------------*/
+#section05{
   background-image: url(../../assets/images/contact.jpg);
   background-attachment: fixed;
   h1.display-5{

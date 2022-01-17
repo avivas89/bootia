@@ -54,9 +54,9 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-$('#button').on('click', function buttonFunction() {
+$('#button').on('click', function() {
 
-  var div = $('#box');
+  var div = $('.box');
 
   div.animate({
     scrollTop: div[0].scrollHeight
