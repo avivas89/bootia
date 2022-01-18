@@ -12,17 +12,7 @@ if (screen.width > 768){
 
 new WOW({offset:offset, scrollContainer: null}).init()
 
-$('#portfolio .owl-carousel').owlCarousel({
-    rtl:true,
-    loop:true,
-    margin:0,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-    }
-})
+
 var swiper = new Swiper(".mySwiper", {
   loop: true,
   pagination: {
@@ -54,13 +44,6 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-$('#button').on('click', function() {
 
-  var div = $('.box');
-
-  div.animate({
-    scrollTop: div[0].scrollHeight
-  }, 1000);
-});
 
 
