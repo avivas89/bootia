@@ -42,16 +42,6 @@ a:hover{
   filter: contrast(0.5);
   color: #ff4d06;
 }
-section a.demo  {
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../../assets/images/arrow.svg);
-  right: 2%;
-  width: 50px;
-  height: 100px;
-  top: 0;
-}
 
 /*----------------------------Banner-------------------------------*/
 #banner{
@@ -96,6 +86,7 @@ section a.demo  {
   a.demo:hover:active  {
     display: none;
   }
+
   .back{
     background-color:white;
     margin: 0 7%;
@@ -104,15 +95,30 @@ section a.demo  {
       display: none;
       position: fixed;
       bottom: 20px;
-      right: -100px;
+      right: -97px;
+      z-index: 99000;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background: none;
+      filter: opacity(0.5);
+    }
+
+    button#mydown {
+      position: fixed;
+      top: 80px;
+      right: -97px;
       z-index: 99;
       border: none;
       outline: none;
       cursor: pointer;
-      padding: 15px;
       background: none;
+      filter: opacity(0.5);
     }
-    img.i-arrow {
+    .i-arrow  {
+      width: 15%;
+    }
+    .arrow{
       width: 15%;
     }
   }
