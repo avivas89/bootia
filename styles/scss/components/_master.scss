@@ -6,6 +6,9 @@ p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
   font-family: Exo;
   color: $black;
 }
+.display-4, .display-5{
+  font-weight: 800;
+}
 
 a,p,div,input,button,textarea{
   font-family: Roboto;
@@ -70,7 +73,6 @@ section a.demo  {
     .text{
       margin-bottom: 80px;
       .display-4, .display-5{
-        font-weight: bold;
         line-height: 1;
         margin-bottom: 0;
       }
@@ -81,6 +83,7 @@ section a.demo  {
       }
       .tittleII{
         color: black;
+        font-weight: 800;
         font-size: 3.8rem;
       }
     }
@@ -89,9 +92,9 @@ section a.demo  {
 /*----------------------------SECCION 02-------------------------------*/
 #section02{
   padding: 14vh 0;
-  background-color: lightgrey;
+  background-color: #eeeeee;
   a.demo:hover:active  {
-  display: none;
+    display: none;
   }
   .back{
     background-color:white;
@@ -119,21 +122,12 @@ section a.demo  {
     align-items: center;
     justify-content: center;
     column-gap: 40px;
-    h1.display-5 {
-      font-weight: 800;
-    }
     .cspan{
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      -webkit-text-stroke: 2px lightgrey;
-      -webkit-text-fill-color: white;
-      -webkit-animation: fill 0.5s infinite alternate;
-      padding-left: 50px;
-      h1{
-        font-size: 20rem;
-      }
+
     }
   }
   .text-top {
@@ -170,24 +164,22 @@ section a.demo  {
 }
 /*----------------------------SECCION 03-------------------------------*/
 #section03{
-  background-color: lightgrey;
+  background-color: #eeeeee;
   background-image: url(../../assets/images/PORTFOLIO.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-    h1.display-5 {
-      font-weight: 800;
-    }
   .portfolio {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: center;
+    text-align: center;
     .pleft{
       width: 30%;
       .swiper-pagination-bullets.swiper-pagination-horizontal{
         bottom: auto;
-        left: 0;
-        width: 30%;
+        position: relative;
+        text-align: center;
+        left: auto;
       }
     }
     .pright {
@@ -210,11 +202,12 @@ section a.demo  {
               position: absolute;
               bottom: 0;
               width: 45%;
+              left: 50%;
             }
           }
           .sgrid1 {
             width: 60%;
-            h1 {
+            h2 {
               border-bottom: 4px solid #fff;
               width: 5%;
               color: #fff;
@@ -270,8 +263,7 @@ section a.demo  {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    h1.display-5{
-      font-weight: 800;
+    .display-5{
       margin-bottom: 40px;
     }
   }
@@ -313,9 +305,6 @@ section a.demo  {
 #section05{
   background-image: url(../../assets/images/contact.jpg);
   background-attachment: fixed;
-  h1.display-5{
-    font-weight: 800;
-  }
   form#contactForm {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -406,6 +395,8 @@ section a.demo  {
         .swiper-pagination-bullets.swiper-pagination-horizontal {
           bottom: 0;
           width: 100%;
+          position: absolute;
+          left: 0;
         }
       }
     }
