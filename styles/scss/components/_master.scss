@@ -122,14 +122,14 @@ section a.demo  {
     align-items: center;
     justify-content: center;
     column-gap: 40px;
-    .cspan{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-    }
   }
+  .cspan {
+    align-items: center;
+    display: flex;
+    img{
+      transform: scale(1,1.3);
+    }
+    }
   .text-top {
     border-bottom: 1px solid #ff4d06;
     padding-bottom: 30px;
@@ -359,9 +359,9 @@ section a.demo  {
   #section02{
     .col-left {
       padding-bottom: 30px;
-      .cspan {
-        display: none;
-      }
+    }
+    .cspan {
+      display: none;
     }
   }
   #section03 {
